@@ -1,0 +1,35 @@
+<div class="container">
+ <h2> contact with us &#8595;</h2>
+  <form action>
+
+    <label class="typ" for="fname">First Name : </label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/><br/> 
+
+    <label class="typ" for="lname">Last Name : </label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br/><br/> 
+
+    <label class="typ" for="country">Country : </label>
+    <select id="country" name="country">
+      <option value="australia"></option>
+      <option value="australia">Jordan</option>
+      <option value="canada">Canada</option>
+      <option value="canada">Saudi Arabia</option>
+      <option value="usa">USA</option> <br/><br/> 
+    </select>
+    <div class="textarea">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </form>
+  <p>Number of people that filled out this form is: {{counter}}</p>
+</div>
+
+
+<app-childfooter [brand]="Item" (notify)="getFromChild($event)" ></app-childfooter>
+  
+
+
+
+
+
+
+  

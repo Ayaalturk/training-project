@@ -1,0 +1,73 @@
+<main>
+  <section class="featured">
+    <div class="container">
+      <h2 class="section-title">Featured products</h2>
+      <div class="split">
+        <a href="#" class="featured__item">
+          <img [attr.src]="imagepath1" alt="" class="featured__img"> 
+          <span class="price">{{getprice()}}</span>
+        </a>
+        <a href="#" class="featured__item">
+          <img [attr.src]="imagepath2" alt="" class="featured__img">
+          <span class="price">{{getprice()}}</span>
+        </a>
+        <a href="#" class="featured__item">
+          <img [attr.src]="imagepath3" alt="" class="featured__img">
+          <span class="price">{{getprice()}}</span>
+        </a>
+      </div>
+    </div>
+ </section>
+ 
+  <section class="our-products">
+    <div class="container">
+      <h2 class="section-title"> Some Our products</h2>
+
+      <article class="product">
+        <img src="assets/img/shoe-5.png" alt="" class="product__image">
+        <h3 class="product__title">A really nice shoe</h3>
+        <p> The best products at the lowest prices so follow us to know all new</p>
+        <button type="button" class="btn"(click)="getMessageString()">Buy now</button>
+      </article>
+
+      <article class="product">
+        <img src="assets/img/shoe-2.png" alt="" class="product__image">
+        <h3 class="product__title">A really nice shoe</h3>
+        <p> The best products at the lowest price so follow us to know all new</p>
+        <button type="button" class="btn"(click)="getMessageString()">Buy now</button>
+      </article>
+
+      <article class="product">
+        <img src="assets/img/shoe-3.png" alt="" class="product__image">
+        <h3 class="product__title">A really nice shoe</h3>
+        <p>The best products at the lowest pricesso follow us to know all new </p>
+        <button type="button" class="btn"(click)="getMessageString()">Buy now</button>
+      </article>
+
+    </div>
+ </section>
+
+ <h2 [ngClass]="{'text':active}">Available brands</h2>
+
+ <div class="row" *ngIf="active">
+   <table class="table">
+     <tr>
+       <th>Name</th>
+       <th>code</th>
+     </tr>
+
+     <tr *ngFor="let item of brandList">
+       <td>{{item.name}}</td>
+       <td>{{item.code |add}}</td>
+
+     </tr>
+   </table>
+  </div>
+ <button (click)="not()"
+ [ngStyle]="{
+   'backgroundColor' : active? 'gray':'rgb(48, 181, 243)',
+   'color' : active? 'white':'black',
+   'fontweigth' : active? 'red':'gray'
+ }"
+ >Show</button>
+</main>

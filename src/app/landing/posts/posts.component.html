@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <h1 style="font-size:8vw;">Blog Post</h1>
+<div class="blog" *ngFor="let post of posts">
+    <h3 id="titel"> &#9679; {{post.title |uppercase}}</h3>
+    <p>{{post.body}}</p>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <hr>
+</div>

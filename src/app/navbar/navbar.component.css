@@ -1,0 +1,27 @@
+.navbar {
+  width: 100%;
+  background-color:rgb(11, 29, 63);
+  overflow: auto;
+  padding: 0.5em  0  0;
+  
+}
+  
+.navbar a {
+  float: right;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  
+  
+}
+ 
+.navbar a:hover {
+  background-color:rgb(48, 181, 243);
+}
+
+.logo {
+  padding: 0.1em;
+  height: 50px;
+}

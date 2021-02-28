@@ -1,0 +1,18 @@
+.Referendum { 
+    background-color:black ;
+    color:rgb(48, 181, 243);
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+button {
+    background-color:rgb(48, 181, 243);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+
+  }

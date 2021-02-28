@@ -1,0 +1,20 @@
+h1 {
+    color:rgb(74, 124, 184);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.5em;
+}
+.blog{
+
+    margin: 0.25em;
+}
+#titel{
+    color: blue;
+}
+#titel:hover{
+    color: rgb(94, 190, 16);
+}
+.checked {
+    color: orange;
+  }
+  

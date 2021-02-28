@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+  }
+  
+  h1 {
+	margin: 0;
+  }
+  
+  .hero {
+	color: white;
+	text-align: center;
+	padding: 12em 0;
+	background:linear-gradient(to right, rgb(60, 141, 179),rgb(25, 40, 58));
+	
+  }
+  .container {
+	width: 85%;
+	max-width: 65em;
+	margin: 0 auto;
+  }
+  
+  
+  .primary-title {
+	font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+	line-height: 1;
+  }
+  
+  .btn {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.125rem;
+	padding: 0.9em 1.25em;
+	background:rgb(11, 29, 63);
+	border-radius: .25em;
+	border-color: rgb(48, 181, 243);
+	margin: 40px;
+  }
+  
+ 
