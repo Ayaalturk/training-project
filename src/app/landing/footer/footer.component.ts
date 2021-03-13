@@ -9,6 +9,7 @@ export class FooterComponent implements OnInit {
   title:string ="Thank you for browsing";
   Item = 'PUMA';
   counter:number=0;
+  
   getFromChild(event:any){
     this.counter+=event;
 
