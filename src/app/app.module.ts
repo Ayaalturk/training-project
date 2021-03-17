@@ -3,21 +3,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule,routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { ChildfooterComponent } from './landing/footer/childfooter.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddPipe } from './pipes/add.pipe';
 import { HttpClientModule } from '@angular/common/http';
-import { PostsComponent } from './landing/posts/posts.component';
+import { ChildfooterComponent } from './landing/footer/childfooter.component';
+import { FooterComponent } from './landing/footer/footer.component';
+import { AuthGuard } from './auth/auth.guard';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildfooterComponent,
+   ChildfooterComponent,
+   FooterComponent,
     routingComponents,
     NavbarComponent,
     AddPipe,
-    PostsComponent,
   ],
 
   imports: [
@@ -28,7 +29,7 @@ import { PostsComponent } from './landing/posts/posts.component';
     
   ],
   
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
